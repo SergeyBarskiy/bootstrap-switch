@@ -23,7 +23,7 @@ angular.module("bootstrap-switch-angular", [])
 
                     var validator = function (value) {
                         isValueBeingSet = true;
-                        element.bootstrapSwitch("setState", value);
+                        element.bootstrapSwitch("state", value);
                         isValueBeingSet = false;
                     };
 
