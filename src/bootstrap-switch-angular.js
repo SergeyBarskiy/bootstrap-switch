@@ -12,7 +12,7 @@ angular.module("bootstrap-switch-angular", [])
                     var currentController = controller[0];
                     element.bootstrapSwitch();
 
-                    element.on("switch-change", function (e, data) {
+                    element.on("switchChange", function (e, data) {
                         if (!isValueBeingSet) {
                             currentController.$setViewValue(data.value);
                             if (!scope.$$phase) {
