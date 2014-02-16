@@ -25,6 +25,7 @@ angular.module("bootstrap-switch-angular", [])
                         isValueBeingSet = true;
                         element.bootstrapSwitch("state", value);
                         isValueBeingSet = false;
+                        return value;
                     };
 
                     currentController.$formatters.push(validator);
